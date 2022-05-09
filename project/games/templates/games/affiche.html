@@ -1,0 +1,15 @@
+{% extends "games/index.html" %}
+
+{% block title %} Affiche {% endblock %}
+
+{% block content %}
+
+{{game.titre}} paru le {{game.date_parution}}
+    <p>
+        SYNOPSIS
+    </p>
+  <p>
+      {{game.synopsis}}
+  </p>
+
+{% endblock %}

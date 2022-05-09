@@ -1,0 +1,16 @@
+{% extends "games/index.html" %}
+
+{% block title %} AMONGUS {% endblock %}
+
+{% block content %}
+    <h2> Liste des jeux</h2>
+    <a href="/games/ajout"> ajouter un jeux</a>
+    <ul>
+    {% for l in liste %}
+        <li> {{l}} <a href="/games/delete/{{l.id}}/"> delete </a>
+            <a href="/games/affiche/{{l.id}}/"> affiche </a>
+        <a href="/games/update/{{l.id}}/"> update </a></li>
+    {% endfor %}
+    </ul>
+{% endblock %}
+

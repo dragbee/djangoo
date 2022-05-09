@@ -1,0 +1,17 @@
+{% extends "games/index.html" %}
+
+{% block title %} AMONGUS {% endblock %}
+
+{% block content %}
+  <h2> Saisissez un nouveau jeux </h2>
+    {% if id != '' %}
+      <form method="post" action="/games/updatetraitement/{{id}}/">
+    {% else %}
+      <form method="post" action="/games/traitement/">
+    {% endif %}
+      {% csrf_token %}
+      {{form.as_ul}}
+      <input type="submit" value="submit"/>
+    </form>
+      </form>
+{% endblock %}

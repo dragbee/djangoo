@@ -3,14 +3,16 @@
 {% block title %} AMONGUS {% endblock %}
 
 {% block content %}
-    <h2> Liste des jeux</h2>
-    <a href="/games/ajout"> ajouter un jeux</a>
-    <ul>
+    <h2 class="h2liste"> Liste des jeux</h2>
+    <ul style="list-style: none">
     {% for l in liste %}
-        <li> {{l}} <a href="/games/delete/{{l.id}}/"> delete </a>
-            <a href="/games/affiche/{{l.id}}/"> affiche </a>
-        <a href="/games/update/{{l.id}}/"> update </a></li>
+        <li class="li">
+            {{l}} <a href="/games/affiche/{{l.id}}/" class="adu" style="float: right; margin-right: 1%;"> affiche </a>
+            <a href="/games/delete/{{l.id}}/" class="adu" style="float: right; margin-right: 1%;"> delete </a>
+        <a href="/games/update/{{l.id}}/" class="adu" style="float: right; margin-right: 1%;"> update </a></li>
     {% endfor %}
     </ul>
+
+    <a class="aliste" href="/games/ajout"> ajouter un jeux</a>
 {% endblock %}
 

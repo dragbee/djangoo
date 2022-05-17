@@ -4,6 +4,10 @@
 
 {% block content %}
 
+    <p>
+        <a href="/games/liste"> Retour</a>
+    </p>
+
 {{game.titre}} paru le {{game.date_parution}}
     <p>
         SYNOPSIS
@@ -11,5 +15,8 @@
   <p>
       {{game.synopsis}}
   </p>
+Catégorie :
+<p>{{cat.resume}}
+</p>
 
 {% endblock %}

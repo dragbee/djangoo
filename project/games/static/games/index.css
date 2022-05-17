@@ -1,0 +1,62 @@
+/* index */
+
+html, body{
+margin : 0 0 0 0;
+}
+
+body{
+background-color : #B8B8B8;
+}
+
+nav{
+	padding : 20px; margin : 0;
+	text-align : center;
+	background-color : gray;
+	font-family : Verdana;
+	display : flex;
+	justify-content : space-around;
+}
+nav li {
+	display : inline;
+	list-style : none;
+}
+nav a {
+	display : inline-block;
+	margin : 0 30px;
+	color : white;
+}
+
+.content{
+    text-align : center;
+    font-size : 200%;
+}
+
+.welcome{
+    text-align : center;
+    margin-top : 20%;
+}
+
+/* liste 1 et 2 */
+
+.h2liste{
+    text-align : center;
+    font-size : 200%;
+}
+
+.aliste{
+    margin-top : 2%;
+
+}
+
+.li{
+padding: 2%;
+margin: 4%;
+border: solid;
+border-radius: 10px;
+border-color: #B8B8B8;
+background-color: #9C9A9A
+}
+
+.adu{
+float : right;
+}

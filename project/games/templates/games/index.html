@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="{%static '/games/index.css'%}">
+  <title>index</title>
+</head>
+
+<body>
+  <div id="squelette">
+    <nav>
+      <h1> Bibliothèque de jeux </h1>
+      <ul>
+        <li><a href="/games/index">Accueil</a></li>
+        <li><a href="/games/liste">liste des jeux</a></li>
+        <li><a href="/games/liste2">Liste des catégories</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  {% block content %}
+    <div>
+      <p class="content"> BIENVENUE SUR MON SITE !</p>
+      <p class="welcome">
+        █───█─▄▀▀─█───▄▀▀─▄▀▀▄─█▄─▄█─▄▀▀<br>
+        █───█─█───█───█───█──█─█▀▄▀█─█──<br>
+        █───█─█▀▀─█───█───█──█─█─▀─█─█▀▀<br>
+        █▄█▄█─█───█───█───█──█─█───█─█──<br>
+        ─▀─▀───▀▀──▀▀──▀▀──▀▀──▀───▀──▀▀<br>
+      </p>
+    </div>
+
+  {% endblock %}
+
+</body>
+</html>

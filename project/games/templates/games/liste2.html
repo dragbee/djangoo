@@ -1,0 +1,17 @@
+{% extends "games/index.html" %}
+
+{% block title %} AMONGUS {% endblock %}
+
+{% block content %}
+    <h2 class="h2liste"> Liste des catégories </h2>
+    <a href="/games/ajout2"> ajouter une catégorie</a>
+    <ul style="list-style: none">
+        {% for l in liste %}
+            <li style="padding: 2%; margin: 4%; border: solid; border-radius: 10px; border-color: #B8B8B8; background-color: #9C9A9A">
+                {{l}} <a href="/games/affiche2/{{l.id}}/" class="adu" style="float: right; margin-right: 1%;">affiche </a>
+            <a href="/games/delete2/{{l.id}}/" class="adu" style="float: right; margin-right: 1%;">delete </a>
+            <a href="/games/update2/{{l.id}}/" class="adu" style="float: right; margin-right: 1%;">update </a> </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
